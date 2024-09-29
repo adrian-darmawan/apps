@@ -1,0 +1,181 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-button, .notifications {
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.menu, .account-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 900;
+    border-radius: 5px;
+}
+
+.menu {
+    left: 10px;
+}
+
+.account-menu {
+    right: 10px;
+}
+
+.menu.active, .account-menu.active {
+    display: block;
+}
+
+.menu a, .account-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.menu a:last-child, .account-menu a:last-child {
+    border-bottom: none;
+}
+
+.account-menu select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .menu, .account-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu, .account-menu {
+        width: 100%;
+        max-width: 100%;
+    }
+    .logo {
+        font-size: 18px;
+    }
+}
+
+/* Animations */
+
+h1, h2, h3, h4, h5, h6 {
+    transition: all 0.3s ease-in-out;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    transform: scale(1.1);
+}
+
+img {
+    transition: all 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
