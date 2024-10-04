@@ -50,7 +50,7 @@
             <div class="flex gap-2">
               <a href="signup.html">
                 <button
-                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0d7cf2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px -4 bg-[#0d7cf2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]"
                 >
                   <span class="truncate">Daftar</span>
                 </button>
@@ -95,63 +95,67 @@
             </a>
           </div>
         </div>
-        <div class="px-10 md:px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/stability/edd29415-d97d-4e53-9923-da08edaccb56.png");'
-                >
-                  <div class="flex flex-col gap-2 text-left">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.01em]"
+        <div class="flex flex-col min-h-screen">
+          <div class="flex-1 flex-shrink-0">
+            <div class="px-10 md:px-40 flex flex-1 justify-center py-5">
+              <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+                <div class="@container">
+                  <div class="@[480px]:p-4">
+                    <div
+                      class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                      style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://cdn.usegalileo.ai/stability/edd29415-d97d-4e53-9923-da08edaccb56.png");'
                     >
-                      Hubungi Kami
-                    </h1>
-                    <p class="text-white text-sm font-medium leading-normal @[480px]:text-base">
-                      Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang layanan kami, jangan ragu untuk menghubungi kami.
-                    </p>
+                      <div class="flex flex-col gap-2 text-left">
+                        <h1
+                          class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.01em]"
+                        >
+                          Hubungi Kami
+                        </h1>
+                        <p class="text-white text-sm font-medium leading-normal @[480px]:text-base">
+                          Jika Anda memiliki pertanyaan atau ingin mengetahui lebih lanjut tentang lay anan kami, jangan ragu untuk menghubungi kami.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-6 p-4 pt-6 bg-white rounded-xl shadow-md">
+                    <h2 class="text-[#0d141c] text-2xl font-bold leading-tight tracking-[-0.015em]">Kirim Pesan</h2>
+                    <form>
+                      <div class="flex flex-col gap-4">
+                        <input
+                          class="w-full h-10 border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
+                          type="text"
+                          placeholder="Nama"
+                          required
+                        />
+                        <input
+                          class="w-full h-10 border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
+                          type="email"
+                          placeholder="Email"
+                          required
+                        />
+                        <textarea
+                          class="w-full border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
+                          rows="5"
+                          placeholder="Pesan"
+                          required
+                        ></textarea>
+                        <button
+                          type="submit"
+                          class="flex items-center justify-center h-10 bg-[#0d7cf2] text-slate-50 rounded-lg font-bold leading-normal"
+                        >
+                          Kirim
+                        </button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
-              <div class="flex flex-col gap-6 p-4 pt-6 bg-white rounded-xl shadow-md">
-                <h2 class="text-[#0d141c] text-2xl font-bold leading-tight tracking-[-0.015em]">Kirim Pesan</h2>
-                <form>
-                  <div class="flex flex-col gap-4">
-                    <input
-                      class="w-full h-10 border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
-                      type="text"
-                      placeholder="Nama"
-                      required
-                    />
-                    <input
-                      class="w-full h-10 border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
-                      type="email"
-                      placeholder="Email"
-                      required
-                    />
-                    <textarea
-                      class="w-full border border-[#e7edf4] rounded-lg px-4 focus:outline-none"
-                      rows="5"
-                      placeholder="Pesan"
-                      required
-                    ></textarea>
-                    <button
-                      type="submit"
-                      class="flex items-center justify-center h-10 bg-[#0d7cf2] text-slate-50 rounded-lg font-bold leading-normal"
-                    >
-                      Kirim
-                    </button>
-                  </div>
-                </form>
-              </div>
             </div>
           </div>
+          <footer class="flex justify-center py-4 border-t border-solid border-b-[#e7edf4] flex-shrink-0">
+            <p class="text-[#0d141c] text-sm font-medium leading-normal"> 2024 AmbilCepat. All rights reserved.</p>
+          </footer>
         </div>
-        <footer class="flex justify-center py-4 border-t border-solid border-b-[#e7edf4]"></footer>
-          <p class="text-[#0d141c] text-sm font-medium leading-normal">© 2024 AmbilCepat. All rights reserved.</p>
-        </footer>
       </div>
     </div>
   </body>
