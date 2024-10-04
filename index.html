@@ -1,42 +1,47 @@
 <html>
 <head>     
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />     
+    <link rel="stylesheet" as="style" onload="this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" />     
     <title>AmbilCepat</title>     
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <style>
-        @media (max-width: 768px) {
-            .mobile-menu {
-                display: none;
-            }
-            .menu-button {
-                display: block;
-            }
-        }
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />     
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>     
+    <style>         
+        @media (max-width: 768px) {             
+            .mobile-menu {                 
+                display: none;             
+            }             
+            .menu-button {                 
+                display: block;             
+            }         
+        }          
+        @media (min-width: 769px) {             
+            .mobile-menu {                 
+                display: flex;             
+            }             
+            .menu-button {                 
+                display: none;             
+            }         
+        } 
 
-        @media (min-width: 769px) {
-            .mobile-menu {
-                display: flex;
-            }
-            .menu-button {
-                display: none;
-            }
-        }
-
-        /* Footer styling */
-        footer {
+        /* Tambahkan style untuk memastikan footer berada di bawah halaman */
+        .footer {
             position: absolute;
             bottom: 0;
             width: 100%;
             text-align: center;
-            background-color: #f1f5f9; /* Light background */
-            padding: 10px 0;
+            padding: 20px;
+            background-color: #0d141c;
+            color: white;
+        }
+
+        /* Untuk layout minimal tinggi layar agar footer selalu di bagian bawah */
+        .min-h-screen {
+            min-height: 100vh;
         }
     </style>
 </head>
 <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>        
+    <div class="relative flex size-full min-h-screen flex-col bg-slate-50 group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
         <div class="layout-container flex h-full grow flex-col">
             <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-4 md:px-10 py-3">
                 <div class="flex items-center gap-4 text-[#0d141c]">
@@ -56,7 +61,7 @@
                         <a class="text-[#0d141c] text-sm font-medium leading-normal" href="pages/contact.html">Kontak</a>
                     </div>
                     <div class="flex gap-2">
-                        <a href="pages/signup.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0d7cf2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015 em]">
+                        <a href="pages/signup.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#0d7cf2] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
                             <span class="truncate">Daftar</span>
                         </a>
                         <a href="pages/login.html" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#e7edf4] text-[#0d141c] text-sm font-bold leading-normal tracking-[0.015em]">
@@ -66,10 +71,13 @@
                 </div>
                 <div class="flex md:hidden">
                     <button class="menu-button flex items-center" onclick="toggleMenu()">
-                        <svg width="24" height="24" fill="currentColor"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+                        <svg width="24" height="24" fill="currentColor">
+                            <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
+                        </svg>
                     </button>
                 </div>
             </header>
+
             <div class="px-4 md:px-40 flex flex-1 justify-center py-5">
                 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
                     <div class="@container">
@@ -240,5 +248,5 @@
             }
         });
     </script>
-  </body>
+</body>
 </html>
